@@ -1,0 +1,138 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+
+* {
+  box-sizing: border-box;
+}
+
+html, body, #root {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  width: 100%;
+}
+
+body {
+  font-size: clamp(11px, 12px, 14px);
+  background: linear-gradient(to bottom, #FFFFFF, #ffffffeb);
+}
+
+nav {
+  padding: 1rem 2rem;
+  text-align: left;
+  width: 100%;
+}
+
+span {
+  font-size: large;
+  cursor: pointer;
+  font-size: clamp(10px, 12px + 0.7vw, 14px);
+}
+
+body {
+  font-family: "Noto Sans", sans-serif;
+  font-optical-sizing: auto;
+  height: inherit;
+}
+
+.home {
+  display: flex;
+  flex-direction: column;
+  height: inherit;
+  align-items: center;
+  justify-content: center;
+}
+
+section {
+  max-width: 1080px;
+  margin-inline: auto;
+}
+
+.subpagina {
+  height: 100%;
+}
+
+.materias {
+  display: flex;
+  gap: 1rem;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+h1 {
+  margin: 0;
+}
+
+h2 {
+  text-align: center;
+}
+
+h3 {
+  font-size: medium;
+  font-weight: 400;
+  margin: 0;
+  padding: 4px 8px;
+  font-size: clamp(10px, 12px + 0.7vw, 14px);
+}
+
+a {
+  all: unset;
+  cursor: pointer;
+  border: 1px solid rgb(227, 227, 227);
+  padding: 4px 8px;
+  border-radius: 4px;
+}
+
+li {
+  display: flex;
+  align-items: center;
+  align-self: center;
+  justify-content: center;
+  gap: 8px;
+}
+
+.avatar {
+  object-fit: cover;
+  max-width: 150px;
+  max-height: 150px;
+}
+
+/* Ajustes para el Header para que también sea un poco más adaptable */
+header {
+  display: flex;
+  flex-direction: column; /* Apila el avatar y el div de texto en pantallas pequeñas */
+  align-items: center; /* Centra los elementos del header */
+  gap: 1rem;
+  padding: 20px;
+  text-align: center; /* Centra el texto del h1 y los links si se apilan */
+}
+
+header > div { /* El contenedor del h1 y los links */
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* Asegura que el h1 y la lista ul estén centrados */
+}
+
+header > div ul {
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap; /* Permite que los links sociales también se envuelvan si no caben */
+  justify-content: center; /* Centra los links sociales */
+  gap: 0.5rem;
+  padding: 0;
+  margin-top: 10px;
+}
+
+.donations {
+  display: flex;
+  flex-direction: row;
+  margin-top: 3rem;
+}
+
+.donations > div {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  justify-content: center;
+  margin-left: 8px;
+  gap: 8px;
+}
