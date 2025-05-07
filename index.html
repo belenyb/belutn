@@ -16,7 +16,6 @@
   <div id="root"></div>
 
   <script type="text/babel">
-    import { SpeedInsights } from "@vercel/speed-insights/next"
     const { useState, useEffect, Fragment } = React;
 
     // --- Componente Header ---
@@ -196,6 +195,10 @@
     ReactDOM.render(<App />, document.getElementById('root'));
 
   </script>
+  <script>
+    window.si = window.si || function () { (window.siq = window.siq || []).push(arguments); };
+  </script>
+  <script defer src="/_vercel/speed-insights/script.js"></script>
 </body>
 
 </html>
