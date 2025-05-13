@@ -129,6 +129,26 @@
       );
     }
 
+    // --- Componente para la página de Programación (con el iframe) ---
+    function MatematicaPage() {
+      const goBack = () => {
+        window.location.hash = '#/'; // Vuelve a la página principal
+      };
+
+      return (
+        <Fragment>
+          <section className="subpagina">
+            <nav>
+              <span onClick={goBack}>
+                ⬅️ Volver
+              </span>
+            </nav>
+            <iframe src="https://maroon-yogurt-06a.notion.site/ebd/1eb91813490d8001a8e4d820467f0bab" width="100%" height="100%" frameborder="0" allowfullscreen />
+          </section>
+        </Fragment>
+      );
+    }
+
     // --- Placeholder para otras páginas de materias ---
     function GenericSubjectPage({ title }) {
       const goBack = () => {
@@ -171,7 +191,7 @@
           pageComponent = <ProgramacionPage />;
           break;
         case '#/matematica':
-          pageComponent = <GenericSubjectPage title="Matemática" />;
+          pageComponent = <MatematicaPage title="Matemática" />;
           break;
         case '#/organizacion':
           pageComponent = <GenericSubjectPage title="Organización Empresarial" />;
